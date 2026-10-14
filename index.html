@@ -117,11 +117,12 @@
     align-items: start;
   }
   .cover {
+    display: block;
     width: min(12rem, 60%);
-    aspect-ratio: 2 / 3;
-    border: 1px solid var(--line);
+    height: auto;
     border-radius: 3px;
     background: var(--frame);
+    box-shadow: 0 0.4rem 1.2rem rgba(23, 40, 58, 0.18);
   }
   .release {
     display: inline-block;
@@ -162,7 +163,7 @@
     <section aria-labelledby="buch">
       <p class="label">Das erste Buch</p>
       <div class="book">
-        <div class="cover" role="img" aria-label="Platz für das Buchcover"></div>
+        <img class="cover" src="cover.jpg" width="900" height="1352" alt="Buchcover: KI für Einsteiger von Leon Preveza" decoding="async">
         <div>
           <h2 id="buch">KI für Einsteiger</h2>
           <p class="subtitle">Texte, Bilder, Musik, Video und Tools: in 32&nbsp;Tagen Schritt für Schritt mit KI ausprobieren</p>
