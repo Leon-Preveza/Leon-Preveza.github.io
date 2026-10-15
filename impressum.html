@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Impressum – Leon Preveza</title>
+<meta name="description" content="Impressum der Webseite von Leon Preveza.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='9' fill='%23c8782f'/%3E%3C/svg%3E">
+<style>
+  :root {
+    --sky: #f2f4f2;
+    --sea: #2b5d80;
+    --sea-deep: #1d4563;
+    --ink: #17283a;
+    --ink-soft: #4a5b6b;
+    --sun: #c8782f;
+    --line: #cfd6d4;
+    --on-sea: #e8eef2;
+    color-scheme: light dark;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --sky: #0f1d2b;
+      --sea: #173a55;
+      --sea-deep: #0c2638;
+      --ink: #ece6d8;
+      --ink-soft: #a9b4be;
+      --sun: #e39a52;
+      --line: #2a3d4f;
+      --on-sea: #c9d3db;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: var(--sky);
+    color: var(--ink);
+    font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    display: flex;
+    flex-direction: column;
+    padding-top: env(safe-area-inset-top, 0px);
+  }
+
+  main {
+    flex: 1;
+    width: 100%;
+    max-width: 42rem;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem 3.5rem;
+    overflow-wrap: break-word;
+  }
+
+  a {
+    color: inherit;
+    text-decoration-color: var(--sun);
+    text-underline-offset: 0.18em;
+  }
+  a:hover { color: var(--sun); }
+  .back {
+    display: inline-block;
+    font-size: 1rem;
+    color: var(--ink-soft);
+    margin-bottom: 2.5rem;
+  }
+  .sun {
+    width: 1.1rem;
+    height: 1.1rem;
+    border-radius: 50%;
+    background: var(--sun);
+    margin-bottom: 1.75rem;
+  }
+  h1 {
+    font-size: clamp(2.1rem, 8vw, 3.2rem);
+    line-height: 1.1;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    margin: 0 0 1.5rem;
+  }
+  h2 {
+    font-size: clamp(1.25rem, 4.5vw, 1.5rem);
+    line-height: 1.25;
+    font-weight: 500;
+    margin: 2.5rem 0 0.75rem;
+  }
+  p {
+    font-size: clamp(1.02rem, 3.2vw, 1.12rem);
+    line-height: 1.65;
+    margin: 0 0 1rem;
+  }
+  .meta { color: var(--ink-soft); }
+  .lead {
+    font-size: clamp(1.1rem, 3.6vw, 1.3rem);
+    line-height: 1.55;
+    color: var(--ink-soft);
+  }
+
+  /* Meer mit Fußzeile */
+  footer {
+    background: linear-gradient(to bottom, var(--sea), var(--sea-deep));
+    color: var(--on-sea);
+    min-height: 9rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    align-content: flex-end;
+    justify-content: center;
+    gap: 0.5rem 1.75rem;
+    padding: 3rem 1.5rem calc(1.5rem + env(safe-area-inset-bottom, 0px));
+    font-size: 1rem;
+  }
+  footer p { margin: 0; font-size: inherit; }
+  footer nav { display: flex; gap: 1.5rem; }
+  footer a { color: var(--on-sea); text-decoration-color: currentColor; }
+  footer a:hover { color: #fff; }
+</style>
+</head>
+<body>
+  <main>
+    <a class="back" href="./">← Zurück zur Startseite</a>
+    <div class="sun" aria-hidden="true"></div>
+    <h1>Impressum</h1>
+
+    <h2>Angaben gemäß § 5 DDG</h2>
+    <p>Peter Kneier<br>
+    c/o Autorenglück #43304<br>
+    Albert-Einstein-Straße 47<br>
+    02977 Hoyerswerda</p>
+
+    <p>Autorenname (Pseudonym): Leon Preveza</p>
+
+    <h2>Kontakt</h2>
+    <p>E-Mail: <a href="mailto:kontakt&#64;leonpreveza.de">kontakt&#64;leonpreveza.de</a></p>
+
+    <h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV:</h2>
+    <p>Peter Kneier, Anschrift wie oben</p>
+  </main>
+
+  <footer>
+    <p>© 2026 Leon Preveza</p>
+    <nav aria-label="Rechtliches">
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+    </nav>
+  </footer>
+</body>
+</html>
