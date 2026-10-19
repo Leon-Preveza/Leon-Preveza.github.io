@@ -40,6 +40,8 @@
       "alternativeHeadline": "Texte, Bilder, Musik, Video und Tools: in 32 Tagen Schritt für Schritt mit KI ausprobieren",
       "inLanguage": "de",
       "image": "https://leonpreveza.de/cover.jpg",
+      "url": "https://www.amazon.de/dp/B0HNHT3Y5N",
+      "isbn": "9798161048849",
       "author": { "@id": "https://leonpreveza.de/#person" }
     }
   ]
@@ -170,7 +172,7 @@
     background: var(--frame);
     box-shadow: 0 0.4rem 1.2rem rgba(23, 40, 58, 0.18);
   }
-  .release {
+  .buy {
     display: inline-block;
     margin-top: 0.5rem;
     padding: 0.55rem 1rem;
@@ -178,6 +180,14 @@
     border-radius: 2rem;
     color: var(--ink);
     font-size: 1rem;
+    text-decoration: none;
+  }
+  .buy:hover { color: var(--ink); background: color-mix(in srgb, var(--sun) 14%, transparent); }
+  .buy:focus-visible { outline: 3px solid var(--sun); outline-offset: 3px; }
+  .formats {
+    font-size: 0.95rem;
+    color: var(--ink-soft);
+    margin-top: 0.25rem;
   }
   @media (min-width: 40rem) {
     .book { grid-template-columns: 12rem 1fr; gap: 2.75rem; }
@@ -221,7 +231,8 @@
           <p class="subtitle">Texte, Bilder, Musik, Video und Tools: in 32&nbsp;Tagen Schritt für Schritt mit KI ausprobieren</p>
           <p>Du möchtest wissen, was KI kann, weißt aber nicht, wo du anfangen sollst? Dieses Buch begleitet dich 32&nbsp;Tage lang mit kleinen, machbaren Schritten.</p>
           <p>Du schreibst Texte mit KI, erstellst Bilder, probierst Musik und Video aus und lernst nützliche Werkzeuge kennen. Dafür brauchst du keine Vorkenntnisse, nur etwas Neugier.</p>
-          <p class="release">Erscheint Ende Oktober 2026</p>
+          <p><a class="buy" href="https://www.amazon.de/dp/B0HNHT3Y5N" target="_blank" rel="noopener noreferrer">Bei Amazon ansehen</a></p>
+          <p class="formats">Als Taschenbuch und als Kindle-E-Book.</p>
         </div>
       </div>
     </section>
